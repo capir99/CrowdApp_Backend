@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: false }));
 // app.use(cors());
 app.use(
   cors({
-    origin: "https://nannapassfront-l2bgvxa06-nanapass-projects.vercel.app", // Asegúrate de que este es el origen correcto de tu frontend
+    origin: "*", // Permitir todos los orígenes
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
   })
