@@ -35,6 +35,8 @@ app.use(
   })
 );
 
+app.options("*", cors()); // Permite la preflight para todas las rutas
+
 app.use(upload.none()); // Si solo estás enviando campos de texto
 
 app.use("/api/payment", paymentRoutes);
