@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-  "scripts": {
-    "start": "node server.js",
-    "build": "npm run build"
-  },
+"scripts": {
+  "start": "node server.js"
+},
   "author": "CAMILO PINTO",
   "license": "ISC",
   "dependencies": {
