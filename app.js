@@ -29,7 +29,7 @@ app.use(express.urlencoded({ extended: false }));
 // app.use(cors());
 app.use(
   cors({
-    origin: "https://nannapassbackend-fia93j8nx-nanapass-projects.vercel.app",
+    origin: "nannapassfront-gi6i71x5y-nanapass-projects.vercel.app",
   })
 );
 
