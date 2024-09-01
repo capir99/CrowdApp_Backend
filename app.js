@@ -26,7 +26,13 @@ try {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: "https://nannapassbackend-fia93j8nx-nanapass-projects.vercel.app",
+  })
+);
+
 app.use(upload.none()); // Si solo estás enviando campos de texto
 
 app.use("/api/payment", paymentRoutes);
