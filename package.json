@@ -5,8 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "build": "npm run build",
-    "test": "mocha"
+    "build": "npm run build"
   },
   "author": "CAMILO PINTO",
   "license": "ISC",
