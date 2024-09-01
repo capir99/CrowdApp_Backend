@@ -26,7 +26,14 @@ try {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(cors());
+// app.use(cors());
+app.use(
+  cors({
+    origin: "https://nannapassfront-l2bgvxa06-nanapass-projects.vercel.app", // Asegúrate de que este es el origen correcto de tu frontend
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+  })
+);
 
 app.use(upload.none()); // Si solo estás enviando campos de texto
 
