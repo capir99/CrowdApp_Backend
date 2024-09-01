@@ -26,12 +26,7 @@ try {
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-// app.use(cors());
-app.use(
-  cors({
-    origin: "https://nannapassfront-gi6i71x5y-nanapass-projects.vercel.app",
-  })
-);
+app.use(cors());
 
 app.use(upload.none()); // Si solo estás enviando campos de texto
 
